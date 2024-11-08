@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="style/jsmind.css" />
+    <script type="text/javascript" src="js-legacy/jsmind.js"></script>
+  </head>
+  <body>
+    <div id="jsmind_container" style="width: 100%; height: 100%;"></div>
+    <script type="text/javascript">
+      var mind = {
+        "meta": {
+          "name": "example",
+          "author": "hizzgdev",
+          "version": "0.2"
+        },
+        "format": "node_tree",
+        "data": {
+          "id": "root",
+          "topic": "jsMind",
+          "children": [
+            {"id": "sub1", "topic": "sub1"},
+            {"id": "sub2", "topic": "sub2"}
+          ]
+        }
+      };
+      var options = {
+        container: 'jsmind_container',
+        theme: 'primary',
+        editable: true,
+      };
+      var jm = new jsMind(options);
+      jm.show(mind);
+    </script>
+  </body>
+</html>
